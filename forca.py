@@ -1,7 +1,7 @@
 
 def jogar():
     print('*********************************')
-    print('***Bem-Vindo no jogo de Forca!***')
+    print('***Bem-Vindo no jogo da Forca!***')
     print('*********************************')
 
     palavra_secreta = 'banana'
@@ -13,7 +13,7 @@ def jogar():
     while(not enforcou and not acertou):
         
         chute = input('Qual letra?')
-
+        chute = chute.strip ()
         index = 0 
         for letra in palavra_secreta:
             if(chute.upper() == letra.upper ()):
@@ -24,5 +24,6 @@ def jogar():
     print('Fim de Jogo')
 
 if(__name__=='__main__'):
-    jogar()
+    jogar() 
+
 

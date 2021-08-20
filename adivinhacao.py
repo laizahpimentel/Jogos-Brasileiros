@@ -51,4 +51,3 @@ def jogar():
 if (__name__=='__main__'):
     jogar()
 
-# sobre a bool - passou = true/ errou = false EXEMPLO
