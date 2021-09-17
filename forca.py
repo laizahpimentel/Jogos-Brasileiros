@@ -2,10 +2,10 @@
 def jogar():
     print('*********************************')
     print('***Bem-Vindo no jogo da Forca!***')
-    print('*********************************')
+    print('*********************************') 
 
     palavra_secreta = 'banana'.upper()
-    letras_acertadas = ['_' for letra in palavra_secreta]
+    letras_acertadas = ['_' for letra in palavra_secreta] #ERRO DE CONTINUIDADE
 
     enforcou = False
     acertou = False
