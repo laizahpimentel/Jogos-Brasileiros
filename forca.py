@@ -66,3 +66,5 @@ def carrega_palavra_secreta():
 
 if(__name__=='__main__'):
     jogar() 
+
+    
