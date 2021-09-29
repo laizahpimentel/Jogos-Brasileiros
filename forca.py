@@ -1,10 +1,10 @@
 import random
 
+ 
 def jogar():
-    print('*********************************')
-    print('***Bem-Vindo no jogo da Forca!***')
-    print('*********************************') 
+    mensagem_abertura()
 
+    carrega_palavra_secreta()
 
     arquivo = open("palavras.txt", "r")
     palavras = []
@@ -18,7 +18,7 @@ def jogar():
     numero = random.randrange(0,len(palavras))
     palavra_secreta = palavras [numero].upper()
 
-    letras_acertadas = ['_' for letra in palavra_secreta] #ERRO DE CONTINUIDADE
+    letras_acertadas = ['_' for letra in palavra_secreta] 
 
     enforcou = False
     acertou = False
@@ -37,7 +37,7 @@ def jogar():
             for letra in palavra_secreta:
                 if(chute == letra):
                     letras_acertadas[index] = letra
-                index = index + 1 
+                index += 1 
         else: 
              erros += 1 
 
@@ -56,7 +56,11 @@ if(__name__=='__main__'):
     jogar() 
 
     
-
+def mensagem_abertura():
+    
+    print('*********************************')
+    print('***Bem-Vindo no jogo da Forca!***')
+    print('*********************************')
 
 
 
